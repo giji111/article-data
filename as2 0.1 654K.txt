@@ -1,0 +1,85 @@
+Forcite
+-------
+Task             : Dynamics
+Version          : 2019
+Build date       : Oct 16 2018
+Host             : w2415.para.bscc
+Threads          : Parallel 32
+Operating system : linux
+Task started     : Mon May 22 17:04:24 2023
+
+---- Dynamics parameters ----
+
+Ensemble                        : NVT
+Temperature                     : 654.00 K
+  Control method                : NHL
+  Q ratio                       : 0.0100000
+  Decay constant                : 1.0000000 ps
+Timestep                        : 1.00 fs
+Number of steps                 : 500000
+Duration                        : 500 ps
+Initial velocities              : Random
+Random number seed              : 1684746264
+
+---- Energy parameters ----
+
+Forcefield                      : COMPASS (Version 2.8)
+Charges                         : Forcefield assigned
+Electrostatic terms:
+  Summation method              : Ewald
+  Accuracy                      : 0.001 kcal/mol
+  Buffer width                  : 0.5 A
+
+van der Waals terms:
+  Summation method              : Atom based
+  Truncation method             : Cubic spline
+  Cutoff distance               : 12.5 A
+  Spline width                  : 1 A
+  Long range correction         : YES
+  Buffer width                  : 0.5 A
+
+
+Energy contributors with missing parameters:
+    Inversion                   : (c c c c), (c c c c4), (c c c c43), (c c c h1), (c c c n2=), 
+                                : (c c c o2h), (c c c s2), (c c c4 c), (c c c43 c), (c c h1 c), 
+                                : (c c n2= c), (c c o2h c), (c c s2 c), (c c s2 h1), 
+                                : (c h1 c s2), (c s2 h1 c) 
+
+Energy contributors using automatic parameters:
+    Angle Bend                  : (c c c), (c c c4), (c c c43), (c c h1), (c c n2=), (c c o2h), 
+                                : (c c s2), (c c4 c4), (c c4 h1), (c c4 n2=), (c c43 c4), 
+                                : (c c43 c43), (c c43 h1), (c o2h h1o), (c s2 c), (c4 n2= c), 
+                                : (s2 c h1) 
+    Torsion                     : (c c c c), (c c c c4), (c c c c43), (c c c h1), (c c c n2=), 
+                                : (c c c o2h), (c c c s2), (c c c4 c4), (c c c4 h1), 
+                                : (c c c43 c4), (c c c43 c43), (c c c43 h1), (c c n2= c4), 
+                                : (c c o2h h1o), (c c s2 c), (h1 c s2 c), (c4 c c c4), 
+                                : (c4 c c o2h), (c4 c c s2), (c43 c c c4), (h1 c c c4), 
+                                : (n2= c c h1), (n2= c4 c c) 
+
+---- Thermostat ----
+
+Nose mass parameter, Q mass: 19.7674 kcal/mol*ps^2
+
+
+
+---- Dynamics summary ----
+
+                             Initial        Final      Average    Std. Dev.
+                             -------        -----      -------    ---------
+Tot. energy (kcal/mol)       762.892     1621.908     1568.524       58.496
+Pot. energy (kcal/mol)      -225.478      563.682      580.268       39.400
+Kin. energy (kcal/mol)       988.370     1058.226      988.256       39.320
+Tot. enthalpy (kcal/mol)    1400.489     1762.256     1575.748      298.548
+Temperature (K)              654.000      700.223      653.924       26.018
+Pressure (GPa)                 0.099        0.022        0.001        0.046
+Volume (A^3)               44561.272    44561.272    44561.272        0.000
+Density (g/cm^3)               0.100        0.100        0.100        0.000
+
+
+
+
+Task terminated               : Mon May 22 17:09:12 2023
+Total CPU time used by Forcite: 4:47 minutes (286.85s)
+
+Termination status : Normal
